@@ -1,0 +1,62 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# reimagine
+
+Currently I'm just keeping some rough notes here on what I think *linear* modelling could look like in R.
+
+
+## things that people may want to estimate
+
+- coefficients
+- uncertainty in coefficients
+- residual error scale
+
+## predictions
+
+- confidence intervals for mean
+- prediction intervals for new data points
+
+## estimators people may want to use
+
+- OLS
+- LASSO
+- RIDGE
+- horseshoe priors!
+- HC1, HC2, etc etc
+
+## diagnostics
+
+- convergence: dependent on estimator
+- statistical
+
+## goodness of fit / predictive performance measures
+
+- RMSE/MAE/etc etc for various resampling strategies
+- R Squared
+- Adj R Squared
+- AIC / BIC
+- F-statistic for model
+
+## convenience / utility functions
+
+- `write_model`: produce latex for the model that was fit
+  - general form of the model
+  - specific model with coefficients from fit
+  
+  
+  
+## interface
+- 
