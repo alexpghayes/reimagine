@@ -1,11 +1,13 @@
 Package: reimagine
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Scratch Work and Notes for a Reimagined Interface to Linear Models
 Version: 0.1.0
 Author: Who wrote it
 Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: Make it easier to apply the Fundamental Trick of Engineering:
+    pretend the world is linear.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/alexpghayes/reimagine
+BugReports: https://github.com/alexpghayes/reimagine/issues
