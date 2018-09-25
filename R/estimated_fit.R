@@ -1,16 +1,14 @@
 
 new_fit <- function(fit_object, specification, implementation) {
 
-  object <- list(
+  estimated_fit <- list(
     specification = specification,
     implementation = implementation,
-    fit = fit_object
+    fit_object = fit_object
   )
 
-  # TODO: figure out how to subclass on estimator and/or implementation
-
-  class(object) <- "estimated_fit"
-  object
+  class(estimated_fit) <- "estimated_fit"
+  estimated_fit
 }
 
 print.estimated_fit <- function(object) {
@@ -20,5 +18,5 @@ print.estimated_fit <- function(object) {
   print(object$specification$model)
   print(object$specification$estimator)
   cat("Implementation:", object$implementation, "\n")
-  print(object$fit)
+  print(object$fit_object)
 }

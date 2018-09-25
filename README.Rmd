@@ -13,6 +13,31 @@ knitr::opts_chunk$set(
 )
 ```
 
+```{r}
+library(magrittr)
+
+mle_fit <- new_linear() %>%
+  fit(mtcars, NULL)
+
+lasso_fit <- new_linear(coefs = "lasso") %>%
+  fit(mtcars, NULL)
+
+mle_fit
+lasso_fit
+
+coef(mle_fit)
+coef(lasso_fit)
+
+class(mle_fit)
+class(lasso_fit)
+
+```
+
+
+
+
+# OLD NOTES
+
 # reimagine
 
 Currently I'm just keeping some rough notes here on what I think *linear* modelling could look like in R.
